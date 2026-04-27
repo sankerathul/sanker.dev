@@ -285,6 +285,19 @@
     @keyframes load {
       to { width: 38%; }
     }
+
+    /* Status badges for contributions */
+    .status-badge {
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .status-completed { background: var(--accent2); }
+    .status-in-progress { background: #f5c542; }
+    .status-pending { background: var(--accent); }
   </style>
 </head>
 <body>
@@ -324,6 +337,20 @@
       </div>
     </div>
 
+    <div class="open-source-section fade-in d3">
+      <h2 style="font-family: 'Syne', sans-serif; font-size: 1.8rem; margin-bottom: 1rem; color: var(--accent);">Open Source Contributions</h2>
+      <p style="font-size: 13px; color: var(--muted); margin-bottom: 1.5rem;">Posts and updates about my open source projects and contributions.</p>
+      <div class="posts-list">
+        <!-- Placeholder for posts -->
+        <div class="post-item" style="border: 1px solid var(--border); padding: 1rem; margin-bottom: 1rem; background: var(--surface); border-radius: 8px;">
+          <h3 style="font-size: 14px; color: var(--text); margin-bottom: 0.5rem;">Project Title</h3>
+          <p style="font-size: 12px; color: var(--muted);">A brief description of the contribution...</p>
+          <a href="#" style="font-size: 11px; color: var(--accent2); text-decoration: none;">Read more →</a>
+        </div>
+        <!-- Add more posts here -->
+      </div>
+    </div>
+
     <div class="chips fade-in d4">
       <div class="chip"><span class="led purple"></span>portfolio.wip</div>
       <div class="chip"><span class="led green"></span>domain.live</div>
@@ -358,6 +385,34 @@
       pctEl.textContent = pct;
       if (pct >= target) clearInterval(iv);
     }, 80);
+
+    // Load and render contributions
+    fetch('contributions.json')
+      .then(response => response.json())
+      .then(data => {
+        data.sort((a, b) => new Date(b.date) - new Date(a.date));
+        const postsList = document.querySelector('.posts-list');
+        postsList.innerHTML = ''; // clear placeholder
+        data.forEach(contrib => {
+          const item = document.createElement('div');
+          item.className = 'post-item';
+          item.innerHTML = `
+            <h3 style="font-size: 14px; color: var(--text); margin-bottom: 0.5rem;">${contrib.codebase} - ${contrib.issue}</h3>
+            <p style="font-size: 12px; color: var(--muted); margin-bottom: 0.5rem;">${contrib.fix}</p>
+            <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 0.5rem;">
+              <span class="status-badge status-${contrib.status.toLowerCase().replace(' ', '-')}">${contrib.status}</span>
+              <span style="font-size: 11px; color: var(--muted);">Lines: ${contrib.linesOfCode}</span>
+              <span style="font-size: 11px; color: var(--muted);">${new Date(contrib.date).toLocaleDateString()}</span>
+            </div>
+            <div style="display: flex; gap: 10px;">
+              <a href="${contrib.links.pr}" style="font-size: 11px; color: var(--accent2); text-decoration: none;">PR →</a>
+              <a href="${contrib.links.issue}" style="font-size: 11px; color: var(--accent2); text-decoration: none;">Issue →</a>
+            </div>
+          `;
+          postsList.appendChild(item);
+        });
+      })
+      .catch(error => console.error('Error loading contributions:', error));
   </script>
 
 </body>

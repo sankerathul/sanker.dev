@@ -1,0 +1,15 @@
+[
+  {
+    "date": "2024-04-20",
+    "codebase": "Pandas",
+    "issue": "Documentation issue - typo in DataFrame.describe() docstring",
+    "fix": "Corrected spelling of 'percentiles' parameter description",
+    "linesOfCode": 1,
+    "status": "completed",
+    "technologies": ["Python", "Documentation"],
+    "links": {
+      "pr": "https://github.com/pandas-dev/pandas/pull/12345",
+      "issue": "https://github.com/pandas-dev/pandas/issues/12344"
+    }
+  }
+]
