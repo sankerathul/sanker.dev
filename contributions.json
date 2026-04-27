@@ -2,7 +2,7 @@
   {
     "date": "2026-03-31",
     "codebase": "Pandas",
-    "issue": "Documentation issue - [source] links are incorrect #64750",
+    "issue": "Documentation issue - [source] links are incorrect",
     "fix": "Fixed the doc build and upload YAML to ensure the source URL is parsed correctly.",
     "linesOfCode": 5,
     "status": "completed",
