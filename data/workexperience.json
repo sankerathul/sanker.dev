@@ -1,0 +1,149 @@
+{
+  "profile": {
+    "name": "Athul Sanker Neyyan",
+    "phone": "",
+    "location": "Mississauga, ON, Canada",
+    "email": "",
+    "linkedin": "https://linkedin.com/in/sankerathul",
+    "website":"https://sanker.dev",
+    "summary": "Senior Software Engineer with 6+ years of experience designing and supporting secure, scalable, cloud-native backend systems using Python, JavaScript, and Java. Strong expertise in object-oriented design, SOLID principles, and distributed systems. Experienced with AWS, Docker, Kubernetes, CI/CD pipelines, and enterprise databases (PostgreSQL, MySQL, MongoDB). Proven contributor in Agile environments with hands-on experience supporting production deployments, documentation, and security-focused development. Actively leveraging GenAI responsibly to improve engineering efficiency while adhering to enterprise and compliance standards."
+  },
+  "skills": {
+    "programmingLanguages": ["Python", "JavaScript", "Java"],
+    "frameworks": ["Flask", "Django", "Pandas", "Auth0", "NodeJS", "Express", "React", "PySpark", "Swagger"],
+    "cicd": ["Docker", "Kubernetes", "Helm", "Git", "Jenkins", "ArgoCD"],
+    "platformsAndTools": ["Ansible", "Kafka", "Linux", "Pip", "Npm", "Apache Airflow", "Jira", "Confluence"],
+    "cloud": ["AWS (EC2, S3, Lambda)", "Azure (Databricks, AKS)"],
+    "databases": ["MySQL", "Vitess", "PostgreSQL", "MongoDB", "Redis"],
+    "softwareDesign": ["SOLID Principles", "Object-Oriented Programming (OOP)"],
+    "softSkills": ["Requirement Gathering", "Analytical Skills"]
+  },
+  "experience": [
+    {
+      "id": 1,
+      "role": "Senior Software Engineer",
+      "company": "Capgemini",
+      "location": "Mississauga, ON, Canada",
+      "startDate": "2024-05",
+      "endDate": null,
+      "isCurrent": true,
+      "clients": [
+        {
+          "name": "Demonware",
+          "highlights": [
+            "Working on the design and development of an end-to-end testing framework for validating Vitess cluster deployments on Kubernetes, using Python and Ansible.",
+            "Collaborated with internal teams to identify, analyze, and remediate security vulnerabilities in critical backend REST API services supporting major global game titles.",
+            "Modernized legacy service security by introducing a custom JWT token issuer for authenticated inter-service API communication.",
+            "Working within an Agile CI/CD process, participating in multi-environment deployments (scratch to production) to support minimal production downtime.",
+            "Updated, improved, and standardized API documentation using Swagger following OpenAPI specifications.",
+            "Improved microservice security by identifying, fixing and documenting vulnerabilities across services using Grafana, Elasticsearch, and Kibana.",
+            "Used Spark (PySpark) and SQL on Databricks to query and analyze large datasets from various sources.",
+            "Applied expertise in Python, MySQL, Kafka, Docker, Kubernetes, and Helm to support team initiatives and drive secure, scalable solutions.",
+            "Contributed to team efforts on GenAI adoption by proposing ideas, conducting investigations, and developing proof-of-concepts to improve team productivity."
+          ],
+          "techStack": ["Python", "Ansible", "Kubernetes", "JWT", "Swagger", "OpenAPI", "Grafana", "Elasticsearch", "Kibana", "PySpark", "Databricks", "MySQL", "Kafka", "Docker", "Helm"]
+        },
+        {
+          "name": "Meta",
+          "highlights": [
+            "Developed and maintained features for an internal tool (equivalent to Apache Airflow) used for authoring, scheduling, and monitoring 250K+ data pipelines.",
+            "Optimized the tool's core logic to handle large DAGs by implementing a solution that splits child job execution into chunks, preventing the 5K job limit in Chronos.",
+            "Resolved serialization errors in data pipelines by fixing Thrift configurations, Jinja templates, and Python operators, ensuring consistency in pipeline code retrieval and execution.",
+            "Created a codemod script using Python and Shell to automate the modification of thousands of pipelines with libcst, enabling efficient transformation logic across large codebases.",
+            "Queried and aggregated data from data warehouse using Presto in notebook to analyze and identify areas of failure."
+          ],
+          "techStack": ["Python", "Shell", "libcst", "Presto", "Jinja", "Thrift", "Apache Airflow"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "Senior Software Developer",
+      "company": "TCS",
+      "location": "Toronto, ON, Canada",
+      "startDate": "2023-02",
+      "endDate": "2024-02",
+      "isCurrent": false,
+      "clients": [
+        {
+          "name": "RBC",
+          "highlights": [
+            "Designed and developed features for a Python Django REST API service to support private cloud storage solutions for banking applications.",
+            "Utilized GitHub, Docker, Kubernetes, and Jenkins to streamline and automate code deployment and testing processes within a CI/CD pipeline.",
+            "Developed a test pipeline for end-to-end data validation in ETL processes using Python, Pandas, and SQL.",
+            "Actively participated in Agile methodologies, contributing to sprint planning, stand-ups, and retrospectives while leveraging Jira for effective project management.",
+            "Served as an SME, providing consultation on leveraging Python for data validation, generating efficiency graphs, and automating report generation during a large-scale ETL project."
+          ],
+          "techStack": ["Python", "Django", "REST API", "Docker", "Kubernetes", "Jenkins", "GitHub", "Pandas", "SQL", "Jira"]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "Software Engineer Lead",
+      "company": "Capgemini",
+      "location": "Bangalore, India",
+      "startDate": "2022-01",
+      "endDate": "2022-12",
+      "isCurrent": false,
+      "clients": [
+        {
+          "name": "Samsung",
+          "highlights": [
+            "Contributed to the gRPC Java API team with responsibilities in feature development, performance improvement, and maintenance, enabling the API to handle millions of requests efficiently.",
+            "Built a data pipeline with Python, Pandas, and Apache Airflow for extract, transform, and load from third-party REST APIs to internal databases.",
+            "Developed a testing framework with Node.js and MySQL to evaluate and validate gRPC services.",
+            "Utilized Azure Databricks to analyze product performance from user data and provide actionable insights for improvements.",
+            "Streamlined the deployment process by automating it with GitHub Actions, Shell scripting, Jenkins, and Azure, leading to significant improvement in workflow efficiency.",
+            "Utilized Docker, Kubernetes, Helm, and Jenkins to establish a robust development process for constructing, testing, and deploying micro-services.",
+            "Restructured communication flows across departments to optimize efficiency in the Java service, fostering collaboration through Jira and Confluence."
+          ],
+          "techStack": ["Java", "gRPC", "Python", "Pandas", "Apache Airflow", "Node.js", "MySQL", "Azure Databricks", "GitHub Actions", "Shell", "Jenkins", "Docker", "Kubernetes", "Helm", "Jira", "Confluence"]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "Back-end Developer",
+      "company": "Chainflux (Wandx Solutions Pvt. Ltd.)",
+      "location": "Bangalore, India",
+      "startDate": "2019-08",
+      "endDate": "2022-01",
+      "isCurrent": false,
+      "clients": [],
+      "highlights": [
+        "Developed and maintained a Node.js and Express-based REST API for a decentralized social media app, integrating Auth0 for authentication to enhance security and user management.",
+        "Integrated REST APIs into a React-based frontend dashboard, enabling dynamic data visualization and user interactions.",
+        "Migrated a Python Django REST API from MySQL Database to Couchbase and Redis, resulting in substantial performance and scalability enhancements.",
+        "Built a Kafka and Python-based system to fetch, process, and update user transactions in MongoDB, seamlessly integrated with an Express.js API.",
+        "Created a Python application for extract, transform, and load data (ETL) from HTML files in S3, deployed on AWS Lambda to enable serverless data processing.",
+        "Proactively contributed to Agile methodologies, fostering team collaboration and adaptability through effective Jira utilization.",
+        "Participated in code reviews, ensured high-quality code through best practices, and utilized Git and GitLab for version control and streamlined deployments."
+      ],
+      "techStack": ["Node.js", "Express", "Auth0", "React", "Python", "Django", "MySQL", "Couchbase", "Redis", "Kafka", "MongoDB", "AWS Lambda", "S3", "Git", "GitLab", "Jira"]
+    },
+    {
+      "id": 5,
+      "role": "Research Engineer / Software Developer",
+      "company": "IspAgro Robotics Pvt. Ltd.",
+      "location": "Bangalore, India",
+      "startDate": "2018-05",
+      "endDate": "2019-08",
+      "isCurrent": false,
+      "clients": [],
+      "highlights": [
+        "Designed and developed an object detection system using Python, TensorFlow, and OpenCV tailored for specialized UAVs.",
+        "Successfully integrated the custom object detection system into the special-purpose UAVs."
+      ],
+      "techStack": ["Python", "TensorFlow", "OpenCV"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Engineering in Electronics and Communication Engineering",
+      "institution": "VTU",
+      "location": "India",
+      "year": 2017
+    }
+  ]
+}

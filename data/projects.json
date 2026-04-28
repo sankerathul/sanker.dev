@@ -1,0 +1,16 @@
+[
+  {
+    "title": "sanker.dev Portfolio",
+    "description": "A minimal personal portfolio built to showcase dynamic content from JSON and a clean developer-first UI.",
+    "link": "https://github.com/sankerathul/sanker.dev",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "status": "Live"
+  },
+  {
+    "title": "Open Source Contributions Tracker",
+    "description": "A lightweight interface that renders PRs and issues from JSON metadata into a simple, readable feed.",
+    "link": "https://github.com/sankerathul/contributions",
+    "techStack": ["JavaScript", "JSON", "Static Site"],
+    "status": "WIP"
+  }
+]
